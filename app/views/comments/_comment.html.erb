@@ -1,0 +1,7 @@
+<li class="list-group-item">
+	<%= comment.body %>
+
+	<%= link_to 'Usuń komentarz', [comment.task, comment],
+	               method: :delete,
+	               data: { confirm: 'Czy na pewno chcesz usunąć komentarz?' }, :class => "btn btn-danger" %>
+</li>
